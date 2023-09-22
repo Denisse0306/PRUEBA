@@ -1,0 +1,19 @@
+
+#importamos libreria pandas
+import pandas as pd
+
+#Asignamos valores a la matriz data
+data = [[1,"antonio",20],[2,"jose",34],[3,"luis",24],[4,"mario",25]]
+#creamos dataframe con la matriz data
+df = pd.DataFrame(data, columns=["id", "name", "age"])
+#imprimimos dataframe dfS
+print(df)
+
+#Leer CSV
+import pandas as pd
+
+path ="/content/sample_data/california_housing_train.csv"
+
+df = pd.read_csv(path)
+
+df.describe(include='all').round(1) 
